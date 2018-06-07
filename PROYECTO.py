@@ -1,11 +1,11 @@
 import time
 
 def menu_principal():
-    print("\n")
+    print("\n"*20)
     print(f"--- Bienvenido al menu {usuarioactual} ---" )
     print()
     print("1. Acerca de...")
-    print("2. Mantenimiento de Usuaraios...")
+    print("2. Mantenimiento de Usuarios...")
     print("3. Rankings")
     print("4. Empezar el cuso de Python")
     print("5. Ayuda")
@@ -69,13 +69,27 @@ while True:
     while True:
         while True:
             sel = menu_principal()
-            if sel in range(1,5):
+            if sel in range(1,6):
                 break
             print("El numero ingresado no es correcto.")
 
         if sel == 1:
-            print("\n")
-            print("Este trabajo....")
+            while True:
+                print("\n"*20)
+                print("Este trabajo está diseñado por alumnos de la UTEC cursando")
+                print("el curso de Introducción a las Ciencias de la Computación")
+                print("")
+                print("El objetivo de este programa es enseñarles a las personas a")
+                print("programar desde un nivel cero.")
+                print("")
+                time.sleep(2)
+                print("Creado por:")
+                print(" - Christian Ledgard")
+                print(" - Lorena Gallo")
+                print(" - Luis Garcia")
+                print("\n")
+                sel = input("Presione enter para regresar")
+                break
 
 
 
@@ -190,14 +204,18 @@ while True:
                 print ("           " + bold + "Nombre" + reset + "              " + bold + "Puntaje" + reset)
 
                 cont1=0
+                numeracion=0
+
+                usuarioordenado = usuario.sort()
+
                 for valor in usuario.items():
                     for valor2 in valor[1]:
                         nivel = valor2
                         if cont1==1:
                             puntaje = valor2
-                        cont1=cont1+1
-
-                    print("1. |",valor[0]," "*(18-len(valor[0])),"|",puntaje," "*(14-len(str(puntaje))),"|",)
+                        cont1+=1
+                    numeracion+=1
+                    print(numeracion,". |",valor[0]," "*(18-len(valor[0])),"|",puntaje," "*(14-len(str(puntaje))),"|",)
                 print("\n")
                 sel = input("Presione enter para regresar")
                 break
@@ -217,5 +235,11 @@ while True:
         #Menu Principal - AYUDA
 
         elif sel == 5:
-            print("\n")
-            print("Ayuda")
+            while True:
+                print("\n"*20)
+                print("Este es un programa super sencillo.")
+                print("Usted no va a necesitar usar su mouse,")
+                print("solo las teclas de su computador.")
+                print("\n")
+                sel = input("Presione enter para regresar")
+                break

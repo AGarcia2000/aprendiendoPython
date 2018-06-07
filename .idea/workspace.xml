@@ -14,13 +14,8 @@
       <file leaf-file-name="PROYECTO.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/PROYECTO.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4136">
-              <caret line="190" selection-start-line="190" selection-end-line="190" />
-              <folding>
-                <element signature="e#1847#1896#0" />
-                <element signature="e#5051#5096#0" />
-                <element signature="e#5171#5209#0" />
-              </folding>
+            <state relative-caret-position="70">
+              <caret line="208" column="45" lean-forward="true" selection-start-line="208" selection-start-column="45" selection-end-line="208" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -143,11 +138,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1267" height="777" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2520064" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2520064" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32959327" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32959327" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4067321" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.43618512" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997195" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -171,13 +167,36 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/PROYECTO.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROYECTO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROYECTO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROYECTO.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4180">
+          <caret line="190" selection-start-line="190" selection-end-line="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PROYECTO.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2948">
           <caret line="134" column="44" selection-start-line="134" selection-start-column="44" selection-end-line="134" selection-end-column="44" />
-          <folding>
-            <element signature="e#1847#1896#0" />
-            <element signature="e#5051#5096#0" />
-            <element signature="e#5171#5209#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -212,13 +231,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/PROYECTO.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4136">
-          <caret line="190" selection-start-line="190" selection-end-line="190" />
-          <folding>
-            <element signature="e#1847#1896#0" />
-            <element signature="e#5051#5096#0" />
-            <element signature="e#5171#5209#0" />
-          </folding>
+        <state relative-caret-position="70">
+          <caret line="208" column="45" lean-forward="true" selection-start-line="208" selection-start-column="45" selection-end-line="208" selection-end-column="45" />
         </state>
       </provider>
     </entry>
