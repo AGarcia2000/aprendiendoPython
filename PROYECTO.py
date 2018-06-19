@@ -562,7 +562,7 @@ while True:
                             break
                         print("El numero ingresado no es correcto.")
 
-                                        if sel == 0:
+                    if sel == 0:
                         break
 
                     elif sel == 1: #Introducción
