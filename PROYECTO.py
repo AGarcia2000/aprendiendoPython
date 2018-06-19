@@ -291,15 +291,77 @@ while True:
 
                 if sel == 1: #Introducción y Variables
                     print("\n")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("         I n t r o d u c c i ó n  y")
+                    print("              V a r i a b l e s")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("\n")
+                    bold = "\033[1m"
+                    reset = "\033[0;0m"
+                    cintro_python()
+                    print("\n")
+                    sel = input("Presione enter para regresar")
+
+                    while True:
+                        sel = cintro_python()
+                        if sel in range(0,5):
+                            break
+                        print("El numero ingresado no es correcto.")
 
                 elif sel == 2: #Estructuras de Control
                     print("\n")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("         E s t r u c t u r a s   d e")
+                    print("                C o n t r o l")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("\n")
+                    bold = "\033[1m"
+                    reset = "\033[0;0m"
+                    cintro_python()
+                    print("\n")
+                    sel = input("Presione enter para regresar")
+                    
+                    while True:
+                        sel = cestruc_python()
+                        if sel in range(0,4):
+                            break
+                        print("El numero ingresado no es correcto.")
 
                 elif sel == 3: #Listas
                     print("\n")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("                L i s t a s")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("\n")
+                    bold = "\033[1m"
+                    reset = "\033[0;0m"
+                    cintro_python()
+                    print("\n")
+                    sel = input("Presione enter para regresar")
+                    
+                    while True:
+                        sel = clist_python()
+                        if sel in range(0,5):
+                            break
+                        print("El numero ingresado no es correcto.")
 
                 if sel == 4: #Funciones
                     print("\n")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("             F u n c i o n e s")
+                    print("- - - - - - - - - - - - - - - - - - - - - - -")
+                    print("\n")
+                    bold = "\033[1m"
+                    reset = "\033[0;0m"
+                    cintro_python()
+                    print("\n")
+                    sel = input("Presione enter para regresar")
+                    
+                    while True:
+                        sel = cfunc_python()
+                        if sel in range(0,5):
+                            break
+                        print("El numero ingresado no es correcto.")
             break
 
 
