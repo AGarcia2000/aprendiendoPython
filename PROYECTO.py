@@ -372,21 +372,33 @@ while True:
 
                     elif sel == 1: #Estructuras de Control Selectivas
                         print("\n")
-                        
+
                         while True:
-                        sel = cestrucselec_python()
-                        if sel in range(0,5):
+                            sel = cestrucselec_python()
+                            if sel in range(0,5):
+                                break
+                            print("El numero ingresado no es correcto.")
+                        
+                        if sel == 0:
                             break
-                        print("El numero ingresado no es correcto.")
+
+                        elif sel == 1:
+                            print("\n")
 
                     elif sel == 2: #Estructuras de Control Repetitivas
                         print("\n")
-                        
+
                         while True:
-                        sel = cestrucrepet_python()
-                        if sel in range(0,5):
+                            sel = cestrucrepet_python()
+                            if sel in range(0,5):
+                                break
+                            print("El numero ingresado no es correcto.")
+                            
+                        if sel == 0:
                             break
-                        print("El numero ingresado no es correcto.")
+
+                        elif sel == 1:
+                            print("\n")
 
                 elif sel == 3: #Listas
                     print("\n")
