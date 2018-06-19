@@ -38,7 +38,49 @@ def reporte_usuarios():
         print("|",valor[0]," "*(18-len(valor[0])),"|",nivel," "*(16-len(str(nivel))),"|",puntaje," "*(14-len(str(puntaje))),"|",)
     return
 
+def cursogen_python():
+    print("1. Introducción y Variables")
+    print("2. Estructuras de Control")
+    print("3. Listas")
+    print("4. Funciones")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-4): "))
 
+def cintro_python():
+    print("1. Introducción")
+    print("2. Variables")
+    print("3. Ejercicios")
+    print("4. Información Adicional")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-4): "))
+
+def cestruc_python():
+    print("1. Introducción")
+    print("2. Estructuras de Control Selectivas")
+    print("3. Estructuras de Control Repetitivas")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-3): "))
+
+def cestrucselec_python():
+    print("1. Introducción")
+    print("2. if, elif y else")
+    print("3. Ejercicios")
+    print("4. Información Adicional")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-4): "))
+
+def cintro_python():
+    print("1. Introducción")
+    print("2. for y while")
+    print("3. Ejercicios")
+    print("4. Información Adicional")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-4): "))
 
 #PROGRAMA
 
