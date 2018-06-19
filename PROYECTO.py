@@ -368,6 +368,21 @@ while True:
                             break
                         print("El numero ingresado no es correcto.")
 
+                    if sel == 0:
+                        break
+
+                    elif sel == 1: #Introducción
+                        print("\n")
+
+                    elif sel == 2: #Listas
+                        print("\n")
+
+                    elif sel == 3: #Ejercicios
+                        print("\n")
+
+                    elif sel == 4: #Información Adicional
+                        print("\n")    
+                        
                 if sel == 4: #Funciones
                     print("\n")
                     print("- - - - - - - - - - - - - - - - - - - - - - -")
@@ -385,6 +400,19 @@ while True:
                         if sel in range(0,5):
                             break
                         print("El numero ingresado no es correcto.")
+                        
+                    elif sel == 1: #Introducción
+                        print("\n")
+
+                    elif sel == 2: #Funciones
+                        print("\n")
+
+                    elif sel == 3: #Ejercicios
+                        print("\n")
+
+                    elif sel == 4: #Información Adicional
+                        print("\n")
+                        
             break
 
 
