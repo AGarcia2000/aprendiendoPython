@@ -266,12 +266,41 @@ while True:
         #Menu Principal - EMPEZAR EL CURZO DE PYTHON
 
         elif sel == 4:
-            print("\n")
-            print("Curso PYTHON")
 
+            while True:
 
+                print("\n")
+                print("- - - - - - - - - - - - - - - - - - - - - - -")
+                print("            C u r s o  P Y T H O N")
+                print("- - - - - - - - - - - - - - - - - - - - - - -")
+                print("\n")
+                bold = "\033[1m"
+                reset = "\033[0;0m"
+                cursogen_python()
+                print("\n")
+                sel = input("Presione enter para regresar")
 
+                while True:
+                    sel = cursogen_python()
+                    if sel in range(0,5):
+                        break
+                    print("El numero ingresado no es correcto.")
 
+                if sel == 0:
+                    break
+
+                if sel == 1: #Introducción y Variables
+                    print("\n")
+
+                elif sel == 2: #Estructuras de Control
+                    print("\n")
+
+                elif sel == 3: #Listas
+                    print("\n")
+
+                if sel == 4: #Funciones
+                    print("\n")
+            break
 
 
         #Menu Principal - AYUDA
