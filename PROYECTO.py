@@ -372,20 +372,40 @@ while True:
 
                     elif sel == 1: #Estructuras de Control Selectivas
                         print("\n")
-
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("         E s t r u c t u r a s   d e")
+                        print("     C o n t r o l  S e l e c t i v a s")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("\n")
+                        
                         while True:
                             sel = cestrucselec_python()
                             if sel in range(0,5):
                                 break
                             print("El numero ingresado no es correcto.")
-                        
+
                         if sel == 0:
                             break
 
-                        elif sel == 1:
+                        elif sel == 1: #Introducción
+                            print("\n")
+                        
+                        elif sel == 2: #if, elif y else
+                            print("\n")
+                        
+                        elif sel == 3: #Ejercicios
+                            print("\n")
+                            
+                        elif sel == 4: #Información Adicional
                             print("\n")
 
                     elif sel == 2: #Estructuras de Control Repetitivas
+                        print("\n")
+                        print("\n")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("         E s t r u c t u r a s   d e")
+                        print("     C o n t r o l  R e p e t i t i v a s")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
                         print("\n")
 
                         while True:
@@ -393,11 +413,20 @@ while True:
                             if sel in range(0,5):
                                 break
                             print("El numero ingresado no es correcto.")
-                            
+
                         if sel == 0:
                             break
 
-                        elif sel == 1:
+                        elif sel == 1: #Introducción
+                            print("\n")
+                        
+                        elif sel == 2: #for y while
+                            print("\n")
+                        
+                        elif sel == 3: #Ejercicios
+                            print("\n")
+                            
+                        elif sel == 4: #Información Adicional
                             print("\n")
 
                 elif sel == 3: #Listas
