@@ -57,9 +57,8 @@ def cintro_python():
     return int(input("Elija una opción (0-4): "))
 
 def cestruc_python():
-    print("1. Introducción")
-    print("2. Estructuras de Control Selectivas")
-    print("3. Estructuras de Control Repetitivas")
+    print("1. Estructuras de Control Selectivas")
+    print("2. Estructuras de Control Repetitivas")
     print("0. Atras")
     print()
     return int(input("Elija una opción (0-3): "))
@@ -307,7 +306,22 @@ while True:
                         if sel in range(0,5):
                             break
                         print("El numero ingresado no es correcto.")
+                        
+                    if sel == 0:
+                        break
 
+                    elif sel == 1: #Introducción
+                        print("\n")
+
+                    elif sel == 2: #Variables
+                        print("\n")
+
+                    elif sel == 3: #Ejercicios
+                        print("\n")
+
+                    elif sel == 4: #Información Adicional
+                        print("\n")
+                        
                 elif sel == 2: #Estructuras de Control
                     print("\n")
                     print("- - - - - - - - - - - - - - - - - - - - - - -")
@@ -323,9 +337,18 @@ while True:
                     
                     while True:
                         sel = cestruc_python()
-                        if sel in range(0,4):
+                        if sel in range(0,3):
                             break
                         print("El numero ingresado no es correcto.")
+
+                    if sel == 0:
+                        break
+
+                    elif sel == 1: #Estructuras de Control Selectivas
+                        print("\n")
+
+                    elif sel == 2: #Estructuras de Control Repetitivas
+                        print("\n")
 
                 elif sel == 3: #Listas
                     print("\n")
