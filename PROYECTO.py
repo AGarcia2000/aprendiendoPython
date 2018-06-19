@@ -73,7 +73,7 @@ def cestrucselec_python():
     print()
     return int(input("Elija una opción (0-4): "))
 
-def cintro_python():
+def cestrucrepet_python():
     print("1. Introducción")
     print("2. for y while")
     print("3. Ejercicios")
