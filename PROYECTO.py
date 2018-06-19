@@ -318,6 +318,32 @@ while True:
 
                     elif sel == 3: #Ejercicios
                         print("\n")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("            E j e r c i c i o s")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("\n")
+                        bold = "\033[1m"
+                        reset = "\033[0;0m"
+                        cintro_ejer()
+                        print("\n")
+                        sel = input("Presione enter para regresar")
+
+                        while True:
+                            sel = cintro_ejer()
+                            if sel in range(0,4):
+                                break
+                            print("El numero ingresado no es correcto.")
+
+                        if sel == 0:
+                            break
+
+                        elif sel == 1: #Ejercicio1
+                            print("\n")
+
+                        elif sel == 2: #Ejercicio2
+                            print("\n")
+
+                        elif sel == 3: #Ejercicio3
 
                     elif sel == 4: #Información Adicional
                         print("\n")
@@ -346,9 +372,21 @@ while True:
 
                     elif sel == 1: #Estructuras de Control Selectivas
                         print("\n")
+                        
+                        while True:
+                        sel = cestrucselec_python()
+                        if sel in range(0,5):
+                            break
+                        print("El numero ingresado no es correcto.")
 
                     elif sel == 2: #Estructuras de Control Repetitivas
                         print("\n")
+                        
+                        while True:
+                        sel = cestrucrepet_python()
+                        if sel in range(0,5):
+                            break
+                        print("El numero ingresado no es correcto.")
 
                 elif sel == 3: #Listas
                     print("\n")
@@ -358,10 +396,10 @@ while True:
                     print("\n")
                     bold = "\033[1m"
                     reset = "\033[0;0m"
-                    cintro_python()
+                    clist_python()
                     print("\n")
                     sel = input("Presione enter para regresar")
-                    
+
                     while True:
                         sel = clist_python()
                         if sel in range(0,5):
@@ -379,11 +417,37 @@ while True:
 
                     elif sel == 3: #Ejercicios
                         print("\n")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("            E j e r c i c i o s")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("\n")
+                        bold = "\033[1m"
+                        reset = "\033[0;0m"
+                        clist_ejer()
+                        print("\n")
+                        sel = input("Presione enter para regresar")
+
+                        while True:
+                            sel = clist_ejer()
+                            if sel in range(0,4):
+                                break
+                            print("El numero ingresado no es correcto.")
+
+                        if sel == 0:
+                            break
+
+                        elif sel == 1: #Ejercicio1
+                            print("\n")
+
+                        elif sel == 2: #Ejercicio2
+                            print("\n")
+
+                        elif sel == 3: #Ejercicio3
 
                     elif sel == 4: #Información Adicional
-                        print("\n")    
-                        
-                if sel == 4: #Funciones
+                        print("\n")
+
+                elif sel == 4: #Funciones
                     print("\n")
                     print("- - - - - - - - - - - - - - - - - - - - - - -")
                     print("             F u n c i o n e s")
@@ -391,16 +455,19 @@ while True:
                     print("\n")
                     bold = "\033[1m"
                     reset = "\033[0;0m"
-                    cintro_python()
+                    cfunc_python()
                     print("\n")
                     sel = input("Presione enter para regresar")
-                    
+
                     while True:
                         sel = cfunc_python()
                         if sel in range(0,5):
                             break
                         print("El numero ingresado no es correcto.")
-                        
+
+                                        if sel == 0:
+                        break
+
                     elif sel == 1: #Introducción
                         print("\n")
 
@@ -409,6 +476,32 @@ while True:
 
                     elif sel == 3: #Ejercicios
                         print("\n")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("            E j e r c i c i o s")
+                        print("- - - - - - - - - - - - - - - - - - - - - - -")
+                        print("\n")
+                        bold = "\033[1m"
+                        reset = "\033[0;0m"
+                        cfunc_ejer()
+                        print("\n")
+                        sel = input("Presione enter para regresar")
+
+                        while True:
+                            sel = cintro_ejer()
+                            if sel in range(0,4):
+                                break
+                            print("El numero ingresado no es correcto.")
+
+                        if sel == 0:
+                            break
+
+                        elif sel == 1: #Ejercicio1
+                            print("\n")
+
+                        elif sel == 2: #Ejercicio2
+                            print("\n")
+
+                        elif sel == 3: #Ejercicio3
 
                     elif sel == 4: #Información Adicional
                         print("\n")
