@@ -86,7 +86,7 @@ while True:
                 print("Creado por:")
                 print(" - Christian Ledgard")
                 print(" - Lorena Gallo")
-                print(" - Luis Garcia")
+                print(" - Luis Alberto Garcia")
                 print("\n")
                 sel = input("Presione enter para regresar")
                 break
@@ -206,7 +206,7 @@ while True:
                 cont1=0
                 numeracion=0
 
-                usuarioordenado = usuario.sort()
+                usuarioordenado = usuario
 
                 for valor in usuario.items():
                     for valor2 in valor[1]:
@@ -243,3 +243,4 @@ while True:
                 print("\n")
                 sel = input("Presione enter para regresar")
                 break
+
