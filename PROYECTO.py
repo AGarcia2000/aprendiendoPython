@@ -344,6 +344,7 @@ while True:
                             print("\n")
 
                         elif sel == 3: #Ejercicio3
+                            print("\n")
 
                     elif sel == 4: #Información Adicional
                         print("\n")
@@ -395,6 +396,33 @@ while True:
                         
                         elif sel == 3: #Ejercicios
                             print("\n")
+                            print("- - - - - - - - - - - - - - - - - - - - - - -")
+                            print("            E j e r c i c i o s")
+                            print("- - - - - - - - - - - - - - - - - - - - - - -")
+                            print("\n")
+                            bold = "\033[1m"
+                            reset = "\033[0;0m"
+                            cestrucselec_ejer()
+                            print("\n")
+                            sel = input("Presione enter para regresar")
+    
+                            while True:
+                                sel = cestrucselec_ejer()
+                                if sel in range(0,4):
+                                    break
+                                print("El numero ingresado no es correcto.")
+    
+                            if sel == 0:
+                                break
+    
+                            elif sel == 1: #Ejercicio1
+                                print("\n")
+    
+                            elif sel == 2: #Ejercicio2
+                                print("\n")
+    
+                            elif sel == 3: #Ejercicio3
+                                print("\n")
                             
                         elif sel == 4: #Información Adicional
                             print("\n")
@@ -425,6 +453,33 @@ while True:
                         
                         elif sel == 3: #Ejercicios
                             print("\n")
+                            print("- - - - - - - - - - - - - - - - - - - - - - -")
+                            print("            E j e r c i c i o s")
+                            print("- - - - - - - - - - - - - - - - - - - - - - -")
+                            print("\n")
+                            bold = "\033[1m"
+                            reset = "\033[0;0m"
+                            cestrucrepet_ejer()
+                            print("\n")
+                            sel = input("Presione enter para regresar")
+
+                            while True:
+                                sel = cestrucrepet_ejer()
+                                if sel in range(0,4):
+                                    break
+                                print("El numero ingresado no es correcto.")
+
+                            if sel == 0:
+                                break
+
+                            elif sel == 1: #Ejercicio1
+                                print("\n")
+
+                            elif sel == 2: #Ejercicio2
+                                print("\n")
+
+                            elif sel == 3: #Ejercicio3
+                                print("\n")
                             
                         elif sel == 4: #Información Adicional
                             print("\n")
@@ -484,6 +539,7 @@ while True:
                             print("\n")
 
                         elif sel == 3: #Ejercicio3
+                            print("\n")
 
                     elif sel == 4: #Información Adicional
                         print("\n")
@@ -543,6 +599,7 @@ while True:
                             print("\n")
 
                         elif sel == 3: #Ejercicio3
+                            print("\n")
 
                     elif sel == 4: #Información Adicional
                         print("\n")
