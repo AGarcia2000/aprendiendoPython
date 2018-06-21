@@ -56,6 +56,14 @@ def cintro_python():
     print()
     return int(input("Elija una opción (0-4): "))
 
+def cintro_ejer():
+    print("1. Ejercicio 1")
+    print("2. Ejercicio 2")
+    print("3. Ejercicio 3")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-3): "))
+
 def cestruc_python():
     print("1. Estructuras de Control Selectivas")
     print("2. Estructuras de Control Repetitivas")
@@ -72,6 +80,14 @@ def cestrucselec_python():
     print()
     return int(input("Elija una opción (0-4): "))
 
+def cestrucselec_ejer():
+    print("1. Ejercicio 1")
+    print("2. Ejercicio 2")
+    print("3. Ejercicio 3")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-3): "))
+
 def cestrucrepet_python():
     print("1. Introducción")
     print("2. for y while")
@@ -80,6 +96,48 @@ def cestrucrepet_python():
     print("0. Atras")
     print()
     return int(input("Elija una opción (0-4): "))
+
+def cestrucrepet_ejer():
+    print("1. Ejercicio 1")
+    print("2. Ejercicio 2")
+    print("3. Ejercicio 3")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-3): "))
+
+def clist_python():
+    print("1. Introducción")
+    print("2. Listas")
+    print("3. Ejercicios")
+    print("4. Información Adicional")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-4): "))
+
+def clist_ejer():
+    print("1. Ejercicio 1")
+    print("2. Ejercicio 2")
+    print("3. Ejercicio 3")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-3): "))
+
+def cfunc_python():
+    print("1. Introducción")
+    print("2. funciones")
+    print("3. Ejercicios")
+    print("4. Información Adicional")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-4): "))
+
+def cfunc_ejer():
+    print("1. Ejercicio 1")
+    print("2. Ejercicio 2")
+    print("3. Ejercicio 3")
+    print("0. Atras")
+    print()
+    return int(input("Elija una opción (0-3): "))
 
 def P1cintro():
     while True:
