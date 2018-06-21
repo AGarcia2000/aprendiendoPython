@@ -81,6 +81,81 @@ def cestrucrepet_python():
     print()
     return int(input("Elija una opción (0-4): "))
 
+def P1cintro():
+    while True:
+        print('Si ves:')
+        print('X=0')
+        print('print(X*1)')
+        print('¿Qué mostrará el programa?')
+        print('')
+        print("1. 0")
+        print("2. 1")
+        print("3. Habrá un error en el programa")
+        Resp=int(input())
+        if Resp == 1:
+            print('')
+            print('Respuesta correcta!')
+            return
+        elif Resp == 2 or Resp == 3:
+            print('')
+            print('Respuesta incorrecta')
+            P1cintro()
+        else:
+            print('')
+            print('Escriba una opción válida.')
+            P1cintro()
+
+def P2cintro():
+    while True:
+        print('Si ves:')
+        print('X=25')
+        print('print(x*2)')
+        print('¿Qué mostrará el programa?')
+        print('')
+        print("1. 50")
+        print("2. 27")
+        print("3. Habrá un error en el programa")
+        Resp=int(input())
+        if Resp == 3:
+            print('')
+            print('Respuesta correcta!')
+            return
+        elif Resp == 2 or Resp == 1:
+            print('')
+            print('Respuesta incorrecta')
+            P2cintro()
+        else:
+            print('')
+            print('Escriba una opción válida.')
+            P2cintro()
+
+def P3cintro():
+    while True:
+        print('Si ves:')
+        print('X=25')
+        print('Y=2')
+        print('X=Y')
+        print('print(X)')
+        print('¿Qué mostrará el programa?')
+        print('')
+        print("1. 25")
+        print("2. 2")
+        print("3. Habrá un error en el programa")
+        Resp=int(input())
+        if Resp == 2:
+            print('')
+            print('Respuesta correcta!')
+            return
+        elif Resp == 3 or Resp == 1:
+            print('')
+            print('Respuesta incorrecta')
+            P3cintro()
+        else:
+            print('')
+            print('Escriba una opción válida.')
+            P3cintro()
+
+
 #PROGRAMA
 
 print()
@@ -506,9 +581,27 @@ while True:
                         break
 
                     elif sel == 1: #Introducción
+                        print('La base de la computación son los algoritmos. Un algoritmo es un conjunto ordenado de operaciones sistemáticas.')
+                        print('Puesto de manera más simple, un algoritmo es una serie de instrucciones sencillas que se llevan a cabo para solventar')
+                        print('un problema.')
+                        print('Características: Finito, definido y preciso.')
+                        print('')
+                        print('Python es un lenguaje utilizado para escribir algoritmos. Un lenguaje de programación.')
+                        print('Algunas instrucciones comunmente usadas son las siguientes:')
+                        print('print(): Imprime lo que esté dentro del parentesis. Si quieres escribir debe ir entre "".')
+                        print('input(): Permite ingresar datos al usuario.')
+                        print('También, los objetos tienen tipos. Un número entero es un int() y un número decimal, un float().')
+                        print('Los textos son str().')
+                        print('Suma: + | Resta: - | Multiplicación: * | División: /')
                         print("\n")
 
                     elif sel == 2: #Listas
+                        print('Una variable está formada por un espacio en el sistema de almacenaje (memoria principal de un ordenador)')
+                        print('y un nombre simbólico (un identificador) que está asociado a dicho espacio')
+                        print('Las variables sirven para almacenar valores.')
+                        print('En Python, una variable se define de la siguiente manera:')
+                        print('X = "HOLA"')
+                        print('Donde "X" es la variable y "HOLA" el valor que esta toma.')
                         print("\n")
 
                     elif sel == 3: #Ejercicios
@@ -533,13 +626,19 @@ while True:
                             break
 
                         elif sel == 1: #Ejercicio1
+                            P1cintro()
                             print("\n")
+                            break
 
                         elif sel == 2: #Ejercicio2
+                            P2cintro()
                             print("\n")
+                            break
 
                         elif sel == 3: #Ejercicio3
+                            P2cintro()
                             print("\n")
+                            break
 
                     elif sel == 4: #Información Adicional
                         print("\n")
