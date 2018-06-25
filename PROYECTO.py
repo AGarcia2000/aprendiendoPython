@@ -555,6 +555,8 @@ while True:
                             while True:
 
                                 print("\n")
+                                print("http://docs.python.org.ar/tutorial/3/real-index.html")
+                                print("\n")
                                 sel = input("Presione enter para regresar")
                                 break
 
@@ -599,7 +601,38 @@ while True:
                                 break
 
                             elif sel == 1:  # Introducción
-                                print("\n")
+                                
+                                while True:
+                                    
+                                    print("\n")
+                                    print("Podemos definir a las estructuras de control selectivas como aquellasque nos permiten comprobar condiciones")  
+                                    print("y hacer que nuestro programa se comporte de una forma u otra, que ejecute un fragmento de código u otro,")
+                                    print("dependiendo de esta condición.")
+                                    print("\n")
+                                    print("Las estructuras de control condicionales, son aquellas que nos permiten evaluar si una o más condiciones se")
+                                    print("cumplen, para decir qué acción vamos a ejecutar. La evaluación de condiciones, solo puede arrojar 1 de 2")
+                                    print("resultados: verdadero o falso (True o False)")
+                                    print("\n")
+                                    print("Para describir la evaluación a realizar sobre una condición, se utilizan operadores relacionales")
+                                    print("(o de comparación):")
+                                    print("\n")                                   
+                                    print("Símbolo   Significado")
+                                    print("==        Igual que")
+                                    print("!=        Distinto que")
+                                    print("<         Menor que")
+                                    print(">         Mayor que")
+                                    print("<=        Menor o igual que")
+                                    print(">=        Mayor o igual que")
+                                    print("\n")
+                                    print("Y para evaluar más de una condición simultáneamente, se utilizan operadores lógicos:")
+                                    print("Operador")
+                                    print("and (y)")
+                                    print("or (o)")
+                                    print("xor (o excluyente)")
+                                    print("\n")
+                                    sel = input("Presione enter para regresar")
+                                    break
+
 
                             elif sel == 2:  # if, elif y else
                                 print("\n")
