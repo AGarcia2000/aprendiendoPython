@@ -40,14 +40,13 @@ def reporte_usuarios():
 
     cont1 = 0
     for valor in usuario.items():
-        for valor2 in valor[1]:
-            nivel = valor2
-            if cont1 == 1:
-                puntaje = valor2
-            cont1 = cont1 + 1
+        nombre = valor[0]
+        nivel = valor[1][0]
+        puntaje = valor[1][1]
 
-        print("|", valor[0], " " * (18 - len(valor[0])), "|", nivel, " " * (16 - len(str(nivel))), "|", puntaje,
+        print("|", nombre, " " * (18 - len(nombre)), "|", nivel, " " * (16 - len(str(nivel))), "|", puntaje,
               " " * (14 - len(str(puntaje))), "|", )
+
     return
 
 
@@ -163,15 +162,47 @@ def cfunc_ejer():
     print()
     return int(input("Elija una opción (0-3): "))
 
-#POR TERMINAR
 
-# def preguntacorrecta(puntaje):
-#     r = csv.reader(open("usuarios.csv", "w+"))
-#     diccionario = {}
-#     for key, val1, val2 in r:
-#         diccionario.update({key:val2})
-#         print(diccionario)
+def puntajes(puntos):
 
+    #A variables
+    sequedo = usuario[usuarioactual][0]
+    puntaje = usuario[usuarioactual][1]
+    nombre = usuarioactual
+
+    #sumar puntos
+    puntaje = int(puntaje)
+    puntaje += puntos
+
+    #eliminar usuario
+    delete = usuarioactual
+    del usuario[delete]
+
+    #volver a grabarlo
+    usuario.update({nombre: [sequedo, puntaje]})
+
+    exportar()
+    return
+
+def dondesequedo(donde):
+
+    #A variables
+    sequedo = usuario[usuarioactual][0]
+    puntaje = usuario[usuarioactual][1]
+    nombre = usuarioactual
+
+    #donde se queda
+    sequedo = int(donde)
+
+    #eliminar usuario
+    delete = usuarioactual
+    del usuario[delete]
+
+    #volver a grabarlo
+    usuario.update({nombre: [sequedo, puntaje]})
+
+    exportar()
+    return
 
 
 def P1cintro():
@@ -187,14 +218,17 @@ def P1cintro():
     if Resp == 1:
         print('')
         print('Respuesta correcta!')
+        puntajes(5)
         return
     elif Resp == 2 or Resp == 3:
         print('')
         print('Respuesta incorrecta')
+        puntajes(-2)
         P1cintro()
     else:
         print('')
         print('Escriba una opción válida.')
+        puntajes(-2)
         P1cintro()
 
 
@@ -212,14 +246,17 @@ def P2cintro():
     if Resp == 3:
         print('')
         print('Respuesta correcta!')
+        puntajes(5)
         return
     elif Resp == 2 or Resp == 1:
         print('')
         print('Respuesta incorrecta')
+        puntajes(-2)
         P2cintro()
     else:
         print('')
         print('Escriba una opción válida.')
+        puntajes(-2)
         P2cintro()
 
 
@@ -228,7 +265,7 @@ def P3cintro():
     print('X=25')
     print('Y=2')
     print('X=Y')
-    print('print(X)')
+    print('print(Y)')
     print('¿Qué mostrará el programa?')
     print('')
     print("1. 25")
@@ -238,14 +275,17 @@ def P3cintro():
     if Resp == 2:
         print('')
         print('Respuesta correcta!')
+        puntajes(5)
         return
     elif Resp == 3 or Resp == 1:
         print('')
         print('Respuesta incorrecta')
+        puntajes(-2)
         P3cintro()
     else:
         print('')
         print('Escriba una opción válida.')
+        puntajes(-2)
         P3cintro()
 
 def exportar():
@@ -444,7 +484,6 @@ while True:
 
         elif sel == 3:
             while True:
-
                 print("\n")
                 print("- - - - - - - - - - - - - - - - - - - - - - -")
                 print("               R A N K I N G ")
@@ -454,21 +493,30 @@ while True:
                 reset = "\033[0;0m"
 
                 print("           " + bold + "Nombre" + reset + "              " + bold + "Puntaje" + reset)
-
                 cont1 = 0
                 numeracion = 0
 
                 usuarioordenado = usuario
 
+                bold = "\033[1m"
+
+                lista=[]
                 for valor in usuario.items():
-                    for valor2 in valor[1]:
-                        nivel = valor2
-                        if cont1 == 1:
-                            puntaje = valor2
-                        cont1 += 1
-                    numeracion += 1
-                    print(numeracion, ". |", valor[0], " " * (18 - len(valor[0])), "|", puntaje,
+                    nombre = valor[0]
+                    puntaje = valor[1][1]
+                    lista.append([nombre,puntaje])
+
+                lista.sort(key=lambda x: x[1])
+                lista.reverse()
+
+                numeracion=0
+                for i in lista:
+                    nombre = i[0]
+                    puntaje = i[1]
+                    numeracion+=1
+                    print(numeracion, ". |", nombre, " " * (18 - len(nombre)), "|", puntaje,
                           " " * (14 - len(str(puntaje))), "|", )
+
                 print("\n")
                 sel = input("Presione enter para regresar")
                 break
@@ -479,7 +527,6 @@ while True:
         elif sel == 4:
 
             while True:
-
                 print("\n")
                 print("- - - - - - - - - - - - - - - - - - - - - - -")
                 print("            C u r s o  P Y T H O N")
@@ -510,6 +557,7 @@ while True:
                         bold = "\033[1m"
                         reset = "\033[0;0m"
                         print("\n")
+                        dondesequedo(1)
 
                         while True:
                             sel = cintro_python()
@@ -637,7 +685,7 @@ while True:
                         bold = "\033[1m"
                         reset = "\033[0;0m"
                         print("\n")
-
+                        dondesequedo(2)
                         while True:
                             sel = cestruc_python()
                             if sel in range(0, 3):
@@ -798,6 +846,7 @@ while True:
                         bold = "\033[1m"
                         reset = "\033[0;0m"
                         print("\n")
+                        dondesequedo(3)
 
                         while True:
                             sel = clist_python()
@@ -856,6 +905,7 @@ while True:
                         bold = "\033[1m"
                         reset = "\033[0;0m"
                         print("\n")
+                        dondesequedo(4)
 
                         while True:
                             sel = cfunc_python()
