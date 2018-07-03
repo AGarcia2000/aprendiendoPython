@@ -952,47 +952,22 @@ while True:
                                 print("\n")
 
                                 while True:
-
-                                    while True:
-                                        sel = cestrucselec_ejer()
-                                        if sel in range(0, 4):
-                                            break
-                                        print("El numero ingresado no es correcto.")
-
-                                    if sel == 0:
+                                    sel = cestrucselec_ejer()
+                                    if sel in range(0, 4):
                                         break
+                                    print("El numero ingresado no es correcto.")
 
-                                    elif sel == 1:  # Ejercicio1
-
-                                        while True:
-
-                                            print("\n")
-                                            P1ecs()
-                                            print("\n")
-                                            sel = input("Presione enter para regresar")
-                                            break
-
-                                    elif sel == 2:  # Ejercicio2
-
-                                        while True:
-
-                                            print("\n")
-                                            P2ecs()
-                                            print("\n")
-                                            sel = input("Presione enter para regresar")
-                                            break
-
-                                    elif sel == 3:  # Ejercicio3
-
-                                        while True:
-
-                                            print("\n")
-                                            P3ecs()
-                                            print("\n")
-                                            sel = input("Presione enter para regresar")
-                                            break
-
+                                if sel == 0:
                                     break
+
+                                elif sel == 1:  # Ejercicio1
+                                    print("\n")
+
+                                elif sel == 2:  # Ejercicio2
+                                    print("\n")
+
+                                elif sel == 3:  # Ejercicio3
+                                    print("\n")
 
                             elif sel == 4:  # Información Adicional
                                 print("\n")
@@ -1063,7 +1038,34 @@ while True:
                                     break
 
                             elif sel == 3: #for
-                                print("\n")
+
+                                while True:
+
+                                    print("\n")
+                                    print("El bucle for, en Python, es aquel que nos permitirá iterar sobre una variable compleja, del tipo lista o tupla:")
+                                    print("1) Por cada nombre en mi_lista, imprimir nombre")
+                                    print("\n")
+                                    print("mi_lista = ['Juan', 'Antonio', 'Pedro', 'Herminio'] ")
+                                    print("for nombre in mi_lista: ")
+                                    print("    print nombre")
+                                    print("\n")
+                                    print("2) Por cada color en mi_tupla, imprimir color:")
+                                    print("\n")
+                                    print("mi_tupla = ('rosa', 'verde', 'celeste', 'amarillo') ")
+                                    print("for color in mi_tupla:")
+                                    print("   print color")
+                                    print("\n")
+                                    print("En los ejemplos anteriores, nombre y color, son dos variables declaradas en tiempo de ejecución ")
+                                    print("(es decir, se declaran dinámicamente durante el bucle), asumiendo como valor, el de cada elemento")
+                                    print("de la lista (o tupla) en cada iteración.")
+                                    print("\n")
+                                    print("Otra forma de iterar con el bucle for, puede emular a while:")
+                                    print('3) Por cada año en el rango 2001 a 2013, imprimir la frase "Informes del Año año":')
+                                    print("for anio in range(2001, 2013): ")
+                                    print('print "Informes del Año", str(anio)')
+
+                                    sel = input("Presione enter para regresar")
+                                    break
 
                             elif sel == 4:  # Ejercicios
                                 print("\n")
@@ -1076,46 +1078,22 @@ while True:
                                 print("\n")
 
                                 while True:
-
-                                    while True:
-                                        sel = cestrucrepet_ejer()
-                                        if sel in range(0, 4):
-                                            break
-                                        print("El numero ingresado no es correcto.")
-
-                                    if sel == 0:
+                                    sel = cestrucrepet_ejer()
+                                    if sel in range(0, 4):
                                         break
+                                    print("El numero ingresado no es correcto.")
 
-                                    elif sel == 1:  # Ejercicio1
-
-                                        while True:
-
-                                            print("\n")
-                                            P1ecr()
-                                            print("\n")
-                                            sel = input("Presione enter para regresar")
-                                            break
-
-                                    elif sel == 2:  # Ejercicio2
-
-                                        while True:
-
-                                            print("\n")
-                                            P2ecr()
-                                            print("\n")
-                                            sel = input("Presione enter para regresar")
-                                            break
-
-                                    elif sel == 3:  # Ejercicio3
-
-                                        while True:
-
-                                            print("\n")
-                                            P3ecr()
-                                            print("\n")
-                                            sel = input("Presione enter para regresar")
-                                            break
+                                if sel == 0:
                                     break
+
+                                elif sel == 1:  # Ejercicio1
+                                    print("\n")
+
+                                elif sel == 2:  # Ejercicio2
+                                    print("\n")
+
+                                elif sel == 3:  # Ejercicio3
+                                    print("\n")
 
                             elif sel == 5:  # Información Adicional
 
