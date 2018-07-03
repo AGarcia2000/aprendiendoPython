@@ -289,6 +289,196 @@ def P3cintro():
         puntajes(-2)
         P3cintro()
 
+def P1ecs():
+    print('Si ves:')
+    print('X=25')
+    print('Y=2')
+    print('if X>25:')
+    print('   Y=X')
+    print('print(Y)')
+    print('¿Qué mostrará el programa?')
+    print('')
+    print("1. 25")
+    print("2. 2")
+    print("3. Habrá un error en el programa")
+    Resp = int(input())
+    if Resp == 2:
+        print('')
+        print('Respuesta correcta!')
+        puntajes(5)
+        return
+    elif Resp == 3 or Resp == 1:
+        print('')
+        print('Respuesta incorrecta')
+        puntajes(-2)
+        P1ecs()
+    else:
+        print('')
+        print('Escriba una opción válida.')
+        puntajes(-2)
+        P1ecs()
+
+def P2ecs():
+    print('Si ves:')
+    print('X=25')
+    print('Y=2')
+    print('if X>=25')
+    print('   Y=X')
+    print('print(Y)')
+    print('¿Qué mostrará el programa?')
+    print('')
+    print("1. 25")
+    print("2. 2")
+    print("3. Habrá un error en el programa")
+    Resp = int(input())
+    if Resp == 3:
+        print('')
+        print('Respuesta correcta!')
+        puntajes(5)
+        return
+    elif Resp == 2 or Resp == 1:
+        print('')
+        print('Respuesta incorrecta')
+        puntajes(-2)
+        P2ecs()
+    else:
+        print('')
+        print('Escriba una opción válida.')
+        puntajes(-2)
+        P2ecs()
+
+def P3ecs():
+    print('Si ves:')
+    print('X=25')
+    print('Y=2')
+    print('if X>25:')
+    print('     Y=X')
+    print('     if Y<30:')
+    print('         print(Y)')
+    print('¿Qué mostrará el programa?')
+    print('')
+    print("1. 25")
+    print("2. 2")
+    print("3. No mostrará nada")
+    Resp = int(input())
+    if Resp == 3:
+        print('')
+        print('Respuesta correcta!')
+        puntajes(5)
+        return
+    elif Resp == 2 or Resp == 1:
+        print('')
+        print('Respuesta incorrecta')
+        puntajes(-2)
+        P3ecs()
+    else:
+        print('')
+        print('Escriba una opción válida.')
+        puntajes(-2)
+        P3ecs()
+
+def P1ecr():
+    print('Si ves:')
+    print('X=25')
+    print('Y=2')
+    print('while X>=25:')
+    print('   print(Y)')
+    print('   X=X+1')
+    print('¿Cuántas veces imprimirá Y el programa?')
+    print('')
+    print("1. 25")
+    print("2. 1")
+    print("3. Para siempre")
+    print("4. Ninguna")
+    Resp = int(input())
+    if Resp == 3:
+        print('')
+        print('Respuesta correcta!')
+        puntajes(5)
+        return
+    elif Resp == 2 or Resp == 1 or Resp == 4:
+        print('')
+        print('Respuesta incorrecta')
+        puntajes(-2)
+        P1ecr()
+    else:
+        print('')
+        print('Escriba una opción válida.')
+        puntajes(-2)
+        P1ecr()
+
+def P2ecr():
+    print('Si ves:')
+    print('X=25')
+    print('Y=2')
+    print('while X<=25')
+    print('   print(Y)')
+    print('   X=X+1')
+    print('¿Cuántas veces imprimirá Y el programa?')
+    print('')
+    print("1. 25")
+    print("2. 1")
+    print("3. Para siempre")
+    print("4. Ninguna")
+    Resp = int(input())
+    if Resp == 4:
+        print('')
+        print('Respuesta correcta!')
+        puntajes(5)
+        return
+    elif Resp == 2 or Resp == 1 or Resp == 3:
+        print('')
+        print('Respuesta incorrecta')
+        puntajes(-2)
+        P2ecr()
+    else:
+        print('')
+        print('Escriba una opción válida.')
+        puntajes(-2)
+        P2ecr()
+
+def P3ecr():
+    print('!!!')
+    print('Dificultad alta')
+    print('!!!')
+    print('Si ves:')
+    print('a=0')
+    print("abc='abcdefghijklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ'")
+    print("st=input('Ingrese la frase:')")
+    print("for x in abc:")
+    print(  "for y in st:")
+    print(      "if y==x:")
+    print(          "a=a+1")
+    print(  "if a>1:")
+    print(      "print (x,':',a,'veces')")
+    print(  "elif a==1:")
+    print(      "print (x,':',a,'vez')")
+    print(  "a=0")
+    print('')
+    print('¿Qué hace el programa?')
+    print("1. Nada.")
+    print("2. Imprime la cantidad de veces que aparece una letra escogida.")
+    print("3. Imprime la cantidad de veces que aparece cada caracter en una frase escogida")
+    print("4. No sé.")
+    print("5. Imprime la cantidad de letras en una frase.")
+
+    Resp = int(input())
+    if Resp == 3:
+        print('')
+        print('Respuesta correcta!')
+        puntajes(5)
+        return
+    elif Resp == 2 or Resp == 1 or Resp == 3 or Resp == 5:
+        print('')
+        print('Respuesta incorrecta')
+        puntajes(-2)
+        P3ecr()
+    else:
+        print('')
+        print('Escriba una opción válida.')
+        puntajes(-2)
+        P3ecr()        
+        
 def exportar():
     w = csv.writer(open("usuarios.csv", "w+", newline=""))
     for key, val in usuario.items():
