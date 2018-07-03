@@ -1,4 +1,5 @@
 import time
+import csv
 
 def menu_principal():
     print("\n" * 20)
@@ -11,6 +12,13 @@ def menu_principal():
     print("5. Ayuda")
     print()
     return int(input("Elija una opción (1-5): "))
+
+def login():
+    print()
+    print("1. Crear un nuevo usuario")
+    print("2. Ingresar con un usuario existente")
+    print()
+    return int(input("Elija una opción (1-2): "))
 
 
 def menu_usuarios():
@@ -155,6 +163,16 @@ def cfunc_ejer():
     print()
     return int(input("Elija una opción (0-3): "))
 
+#POR TERMINAR
+
+# def preguntacorrecta(puntaje):
+#     r = csv.reader(open("usuarios.csv", "w+"))
+#     diccionario = {}
+#     for key, val1, val2 in r:
+#         diccionario.update({key:val2})
+#         print(diccionario)
+
+
 
 def P1cintro():
     print('Si ves:')
@@ -230,6 +248,16 @@ def P3cintro():
         print('Escriba una opción válida.')
         P3cintro()
 
+def exportar():
+    w = csv.writer(open("usuarios.csv", "w+"))
+    for key, val in usuario.items():
+        w.writerow([key, val[0], val[1]])
+
+def importar():
+    r = csv.reader(open("usuarios.csv", "r"))
+    for key, val1, val2 in r:
+        lista=[val1,val2]
+        usuario.update({key:lista})
 
 # PROGRAMA
 
@@ -238,18 +266,52 @@ print("Bienvenidos al programa: Aprendiendo en Python")
 print()
 print("- - - - - - - - - - - - - - - - - - - - - - -")
 print()
-print("Escribe tu nombre a continuación para ingresar al programa:")
-print()
-usuarioactual = input("Nombre: ")
+print("Selecciona:")
 
 usuario = {}
-usuario.update({usuarioactual: [0, 0]})  # El primer cero es donde se quedo y el tercero el PUNTAJE
+importar()
+
+while True:
+    sel = login()
+    if sel in range(1, 6):
+        break
+    print("El numero ingresado no es correcto.")
+
+if sel ==1: #Nuevo USUARIO
+    print()
+    print()
+    print("Ingrese su nombre a continuación: ")
+    print()
+    usuarioactual = input("Nombre: ")
+    usuario.update({usuarioactual: [0, 0]})
+    exportar()
+
+elif sel ==2: #USUARIO REGISTRADO
+    print()
+    print()
+    print("Selecciona su usuario:")
+    cont2 = 0
+    cont3 = 1
+    for i in usuario.items():
+        print(f"{cont3}. {i[0]}")
+        cont2 += 1
+        cont3 += 1
+    sel = int(input(f"Elija una opción (1-{cont2}):"))
+
+    nuevalista = []
+    for i in usuario.keys():
+        nuevalista.append(i)
+
+    usuarioactual = nuevalista[sel - 1]
+    exportar()
+
+# El primer cero es donde se quedo y el tercero el PUNTAJE
 
 # Ingresa al Menu Principal del Programa
 
 
-print("\n" * 20)
 
+print("\n" * 20)
 while True:
 
     # Menu Principal - ACERCA DE...
@@ -307,6 +369,7 @@ while True:
 
                     usuarioactual = input("Ingrese el nombre del nuevo usuario: ")
                     usuario.update({usuarioactual: [0, 0]})
+                    exportar()
                     print("\n")
                     print("--- El usuario se agrego correctamente ---")
                     time.sleep(1.5)
@@ -339,6 +402,7 @@ while True:
                         nuevalista.append(i)
 
                     usuarioactual = nuevalista[sel - 1]
+                    exportar()
 
                     print("\n")
                     print("--- El usuario se cambio correctamente ---")
@@ -367,6 +431,7 @@ while True:
 
                     delete = nuevalista2[sel - 1]
                     del usuario[delete]
+                    exportar()
 
                     print("\n")
                     print("--- El usuario se elimino correctamente ---")
@@ -378,7 +443,6 @@ while True:
         # Menu Principal - RANKINGS
 
         elif sel == 3:
-
             while True:
 
                 print("\n")
