@@ -108,12 +108,13 @@ def cestrucselec_ejer():
 
 def cestrucrepet_python():
     print("1. Introducción")
-    print("2. for y while")
+    print("2. for")
+    print("3. while")
     print("3. Ejercicios")
     print("4. Información Adicional")
     print("0. Atras")
     print()
-    return int(input("Elija una opción (0-4): "))
+    return int(input("Elija una opción (0-5): "))
 
 
 def cestrucrepet_ejer():
@@ -791,7 +792,7 @@ while True:
 
                             while True:
                                 sel = cestrucrepet_python()
-                                if sel in range(0, 5):
+                                if sel in range(0, 6):
                                     break
                                 print("El numero ingresado no es correcto.")
 
@@ -799,9 +800,53 @@ while True:
                                 break
 
                             elif sel == 1:  # Introducción
-                                print("\n")
 
-                            elif sel == 2:  # for y while
+                                while True:
+
+                                    print("\n")
+                                    print("A diferencia de las estructuras de control condicionales, las iterativas (también llamadas cíclicas o bucles),")
+                                    print("nos permiten ejecutar un mismo código, de manera repetida, mientras se cumpla una condición.")
+
+                                    print("En Python se dispone de dos estructuras cíclicas:")
+                                    print("\n")
+                                    print("     El bucle while")
+                                    print("     El bucle for")
+                                    print("\n")
+
+                                    sel = input("Presione enter para regresar")
+                                    break
+
+                            elif sel == 2:  # for
+
+                                while True:
+
+                                    print("\n")
+                                    print("Bucle while")
+                                    print('Este bucle, se encarga de ejecutar una misma acción "mientras que" una determinada condición se cumpla.')
+                                    print('Ejemplo: Mientras que año sea menor o igual a 2012, imprimir la frase "Informes del Año año".')
+                                    print("\n")
+                                    print("anio = 2001")
+                                    print("while anio <= 2003: ")
+                                    print('    print "Informes del Año", str(anio)')
+                                    print("    anio += 1")
+                                    print("\n")
+                                    print("La iteración anterior, generará la siguiente salida:")
+                                    print("\n")
+                                    print("Informes del año 2001 ")
+                                    print("Informes del año 2002 ")
+                                    print("Informes del año 2003 ")
+                                    print("\n")
+                                    print("Si miras la última línea:")
+                                    print("anio += 1")
+                                    print("Podrás notar que en cada iteración, incrementamos el valor de la variable que condiciona el bucle (anio). ")
+                                    print("Si no lo hiciéramos, esta variable siempre sería igual a 2001 y el bucle se ejecutaría de forma infinita,")
+                                    print("ya que la condición (anio <= 2012) siempre se estaría cumpliendo.")
+                                    print("\n")
+
+                                    sel = input("Presione enter para regresar")
+                                    break
+
+                            elif sel == 3: #while
                                 print("\n")
 
                             elif sel == 3:  # Ejercicios
@@ -832,8 +877,29 @@ while True:
                                 elif sel == 3:  # Ejercicio3
                                     print("\n")
 
-                            elif sel == 4:  # Información Adicional
-                                print("\n")
+                            elif sel == 5:  # Información Adicional
+
+                                while True:
+
+                                    print("\n")
+                                    print("While True")
+                                    print ("\n")
+                                    print("¿Qué sucede si el valor que condiciona la iteración no es numérico y no puede incrementarse? ")
+                                    print("En ese caso, podremos utilizar una estructura de control condicional, anidada dentro del bucle, ")
+                                    print("y frenar la ejecución cuando el condicional deje de cumplirse, con la palabra clave reservada break:")
+                                    print("\n")
+                                    print("while True:")
+                                    print('    nombre = raw_input("Indique su nombre: ")')
+                                    print("    if nombre:")
+                                    print("        break")
+                                    print("\n")
+                                    print("El bucle anterior, incluye un condicional anidado que verifica si la variable nombre es verdadera")
+                                    print("(solo será verdadera si el usuario tipea un texto en pantalla cuando el nombre le es solicitado).")
+                                    print("Si es verdadera, el bucle para (break). Sino, seguirá ejecutándose hasta que el usuario, ingrese ")
+                                    print("un texto en pantalla.")
+                                    print("\n")
+                                    sel = input("Presione enter para regresar")
+                                    break
 
                 elif sel == 3:  # Listas
 
