@@ -961,13 +961,36 @@ while True:
                                     break
 
                                 elif sel == 1:  # Ejercicio1
-                                    print("\n")
+
+                                    while True:
+
+                                        print("\n")
+                                        P1ecs()
+                                        print("\n")
+                                        sel = input("Presione enter para regresar")
+                                        break
 
                                 elif sel == 2:  # Ejercicio2
-                                    print("\n")
+
+                                    while True:
+
+                                        print("\n")
+                                        P2ecs()
+                                        print("\n")
+                                        sel = input("Presione enter para regresar")
+                                        break
 
                                 elif sel == 3:  # Ejercicio3
-                                    print("\n")
+
+                                    while True:
+
+                                        print("\n")
+                                        P3ecs()
+                                        print("\n")
+                                        sel = input("Presione enter para regresar")
+                                        break
+
+                                break
 
                             elif sel == 4:  # Información Adicional
                                 print("\n")
@@ -1087,13 +1110,35 @@ while True:
                                     break
 
                                 elif sel == 1:  # Ejercicio1
-                                    print("\n")
+
+                                        while True:
+
+                                            print("\n")
+                                            P1ecr()
+                                            print("\n")
+                                            sel = input("Presione enter para regresar")
+                                            break
 
                                 elif sel == 2:  # Ejercicio2
-                                    print("\n")
+
+                                    while True:
+
+                                        print("\n")
+                                        P2ecr()
+                                        print("\n")
+                                        sel = input("Presione enter para regresar")
+                                        break
 
                                 elif sel == 3:  # Ejercicio3
-                                    print("\n")
+
+                                    while True:
+
+                                        print("\n")
+                                        P3ecr()
+                                        print("\n")
+                                        sel = input("Presione enter para regresar")
+                                        break
+                                break
 
                             elif sel == 5:  # Información Adicional
 
