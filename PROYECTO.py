@@ -1006,7 +1006,7 @@ while True:
                                     sel = input("Presione enter para regresar")
                                     break
 
-                            elif sel == 2:  # for
+                            elif sel == 2:  # while
 
                                 while True:
 
@@ -1036,10 +1036,10 @@ while True:
                                     sel = input("Presione enter para regresar")
                                     break
 
-                            elif sel == 3: #while
+                            elif sel == 3: #for
                                 print("\n")
 
-                            elif sel == 3:  # Ejercicios
+                            elif sel == 4:  # Ejercicios
                                 print("\n")
                                 print("- - - - - - - - - - - - - - - - - - - - - - -")
                                 print("            E j e r c i c i o s")
